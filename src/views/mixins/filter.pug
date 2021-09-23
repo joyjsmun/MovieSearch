@@ -1,6 +1,6 @@
 mixin filter(movies)
-
     div 
         ul 
             each movie in movies 
-                li=movie.title 
+                 li
+                    a(href=`/${movie.id}`)=movie.title 

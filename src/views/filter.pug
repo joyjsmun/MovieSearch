@@ -1,8 +1,5 @@
 extends base
+include mixins/filter
 
 block content
-    div 
-        ul 
-            each movie in movies 
-                 li
-                    a(href=`/${movie.id}`)=movie.title 
+    +filter(movies)
