@@ -1,0 +1,6 @@
+mixin movie(movie)
+    div
+        h4=movie.summary
+          each genre in movie.genres
+            ul
+                li=genre

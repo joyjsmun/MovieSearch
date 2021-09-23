@@ -1,0 +1,8 @@
+extends base
+
+block content
+    div 
+        ul 
+            each movie in movies 
+                 li
+                    a(href=`/${movie.id}`)=movie.title 
