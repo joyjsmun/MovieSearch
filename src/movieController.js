@@ -30,6 +30,6 @@ export const filterMovie = (req, res) => {
     console.log(movies)
     res.render("filter",{pageTitle:"Searching by year:"+year,movies})
   }
-  res.render("filter")
+  
 
 };
